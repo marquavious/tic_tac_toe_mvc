@@ -23,14 +23,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cyE-ht-pvB">
-                                <rect key="frame" x="16" y="20" width="343" height="627"/>
+                                <rect key="frame" x="16" y="162" width="343" height="343"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cyE-ht-pvB" secondAttribute="bottom" constant="20" id="LJJ-Yg-HNS"/>
-                            <constraint firstItem="cyE-ht-pvB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="heV-s5-VDm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cyE-ht-pvB" secondAttribute="bottom" constant="162" id="LJJ-Yg-HNS"/>
+                            <constraint firstItem="cyE-ht-pvB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="142" id="heV-s5-VDm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cyE-ht-pvB" secondAttribute="trailing" id="jPh-RW-OQY"/>
                             <constraint firstItem="cyE-ht-pvB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kZK-v3-Lyh"/>
                         </constraints>

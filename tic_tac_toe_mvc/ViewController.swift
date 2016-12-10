@@ -8,21 +8,18 @@
 
 import UIKit
 
-
-
 class ViewController: UIViewController {
     @IBOutlet weak var mainView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        addBoard()
+//        let frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.width)
+        let board = Board(frame: CGRect.zero, view: mainView)
+        mainView.addSubview(board)
+        
     }
     
-    func addBoard(){
-        let frame = CGRect(x: 0, y: 100, width: self.view.frame.width, height: self.view.frame.width)
-        let board = Board(frame: frame, masterView: self.view, squareId: .main)
-        view.addSubview(board)
-        board.makeBoard()
-
-    }
+    
+    
 }
     
