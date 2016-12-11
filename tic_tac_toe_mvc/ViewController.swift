@@ -17,14 +17,43 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         mainView.layoutIfNeeded()
         board = Board(frame: CGRect.zero)
-        
         mainView.addSubview(board)
-
         board.topAnchor.constraint(equalTo: mainView.topAnchor).isActive = true
         board.bottomAnchor.constraint(equalTo: mainView.bottomAnchor).isActive = true
         board.leadingAnchor.constraint(equalTo: mainView.leadingAnchor).isActive = true
         board.trailingAnchor.constraint(equalTo: mainView.trailingAnchor).isActive = true
         
+//        makeSquares()
+        
+        let a = createSquare(id: .tl, color: .red)
+        let b = createSquare(id: .tm, color: .blue)
+        let c = createSquare(id: .tr, color: .green)
+        let d = createSquare(id: .ml, color: .yellow)
+        let e = createSquare(id: .mm, color: .red)
+        let f = createSquare(id: .mr, color: .blue)
+        let g = createSquare(id: .bl, color: .green)
+        let h = createSquare(id: .bm, color: .yellow)
+        let i = createSquare(id: .br, color: .red)
+        
+        board.addSubview(a)
+        board.addSubview(b)
+        board.addSubview(c)
+        board.addSubview(d)
+        board.addSubview(e)
+        board.addSubview(f)
+        board.addSubview(g)
+        board.addSubview(h)
+        board.addSubview(i)
+        
+        createConstraints(square: a, placement: .top, width: 1/3, height: 1/3, masterView: board , subView: nil,subViewTop: nil)
+        createConstraints(square: b, placement: .top, width: 1/3, height: 1/3, masterView: board, subView: a,subViewTop: nil)
+        createConstraints(square: c,placement: .top, width: 1/3, height: 1/3, masterView: board, subView: b,subViewTop: nil)
+        createConstraints(square: d,placement: .middle, width: 1/3, height: 1/3, masterView: board, subView: nil,subViewTop: a)
+        createConstraints(square: e,placement: .middle, width: 1/3, height: 1/3, masterView: board, subView: d,subViewTop: b)
+        createConstraints(square: f,placement: .middle, width: 1/3, height: 1/3, masterView: board, subView: e,subViewTop: c)
+        createConstraints(square: g, placement: .bottom, width: 1/3, height: 1/3, masterView: board, subView: nil, subViewTop: d)
+        createConstraints(square: h, placement: .bottom, width: 1/3, height: 1/3, masterView: board, subView: g, subViewTop: e)
+        createConstraints(square: i, placement: .bottom, width: 1/3, height: 1/3, masterView: board , subView: h, subViewTop: f)
         
     }
     
@@ -35,37 +64,8 @@ class ViewController: UIViewController {
         square.backgroundColor = color
         square.translatesAutoresizingMaskIntoConstraints = false
         square.isUserInteractionEnabled = true
-        square.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(Square.printId)))
         return square
     }
-
-    
-    func makeSquares() {
-        let a = createSquare(id: .tl, color: .red)
-        let b = createSquare(id: .tm, color: .blue)
-        let c = createSquare(id: .tr, color: .green)
-        let d = createSquare(id: .ml, color: .yellow)
-        let e = createSquare(id: .mm, color: .red)
-        let f = createSquare(id: .mr, color: .blue)
-        let g = createSquare(id: .bl, color: .green)
-        let h = createSquare(id: .bm, color: .yellow)
-        let i = createSquare(id: .br, color: .red)
-    
-    
-        createConstraints(square: a, placement: .top, width: 1/3, height: 1/3, masterView: board , subView: nil,subViewTop: nil)
-        createConstraints(square: b, placement: .top, width: 1/3, height: 1/3, masterView: board, subView: a,subViewTop: nil)
-        createConstraints(square: c,placement: .top, width: 1/3, height: 1/3, masterView: board, subView: b,subViewTop: nil)
-        createConstraints(square: d,placement: .middle, width: 1/3, height: 1/3, masterView: board, subView: nil,subViewTop: a)
-        createConstraints(square: e,placement: .middle, width: 1/3, height: 1/3, masterView: board, subView: d,subViewTop: b)
-        createConstraints(square: f,placement: .middle, width: 1/3, height: 1/3, masterView: board, subView: e,subViewTop: c)
-        createConstraints(square: g, placement: .bottom, width: 1/3, height: 1/3, masterView: board, subView: nil, subViewTop: d)
-        createConstraints(square: h, placement: .bottom, width: 1/3, height: 1/3, masterView: board, subView: g, subViewTop: e)
-        createConstraints(square: i, placement: .bottom, width: 1/3, height: 1/3, masterView: board , subView: h, subViewTop: f)
-    
-    }
-    
-    
-    
     
     func createConstraints(square: Square, placement: Square.Placement ,width:Float, height:Float, masterView: Board, subView: Square?, subViewTop: Square?){
     

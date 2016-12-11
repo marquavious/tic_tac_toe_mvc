@@ -43,6 +43,13 @@ class Square: UIView {
     
     func printId(){
         print(id)
+        let x = X(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+        self.addSubview(x)
+        
+        x.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        x.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+        x.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+        x.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
     }
     
     func createSquare(id:SquareName, color: UIColor) {
