@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C0879C0B1DFC8EA30074F44D /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0879C0A1DFC8EA30074F44D /* Square.swift */; };
+		C0879C0B1DFC8EA30074F44D /* Squares.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0879C0A1DFC8EA30074F44D /* Squares.swift */; };
 		C0879C0D1DFC970F0074F44D /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0879C0C1DFC970F0074F44D /* Board.swift */; };
+		C0AD87CF1DFDE50A005020A8 /* idk.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AD87CE1DFDE50A005020A8 /* idk.swift */; };
 		C0C5F7691DFB0AD200329FED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C5F7681DFB0AD200329FED /* AppDelegate.swift */; };
 		C0C5F76B1DFB0AD200329FED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C5F76A1DFB0AD200329FED /* ViewController.swift */; };
 		C0C5F76E1DFB0AD200329FED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C5F76C1DFB0AD200329FED /* Main.storyboard */; };
@@ -17,8 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C0879C0A1DFC8EA30074F44D /* Square.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
+		C0879C0A1DFC8EA30074F44D /* Squares.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Squares.swift; sourceTree = "<group>"; };
 		C0879C0C1DFC970F0074F44D /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		C0AD87CE1DFDE50A005020A8 /* idk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = idk.swift; sourceTree = "<group>"; };
 		C0C5F7651DFB0AD200329FED /* tic_tac_toe_mvc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tic_tac_toe_mvc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C5F7681DFB0AD200329FED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0C5F76A1DFB0AD200329FED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +62,8 @@
 			children = (
 				C0C5F7681DFB0AD200329FED /* AppDelegate.swift */,
 				C0C5F76A1DFB0AD200329FED /* ViewController.swift */,
-				C0879C0A1DFC8EA30074F44D /* Square.swift */,
+				C0AD87CE1DFDE50A005020A8 /* idk.swift */,
+				C0879C0A1DFC8EA30074F44D /* Squares.swift */,
 				C0879C0C1DFC970F0074F44D /* Board.swift */,
 				C0C5F76C1DFB0AD200329FED /* Main.storyboard */,
 				C0C5F76F1DFB0AD200329FED /* Assets.xcassets */,
@@ -143,7 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0879C0B1DFC8EA30074F44D /* Square.swift in Sources */,
+				C0AD87CF1DFDE50A005020A8 /* idk.swift in Sources */,
+				C0879C0B1DFC8EA30074F44D /* Squares.swift in Sources */,
 				C0C5F76B1DFB0AD200329FED /* ViewController.swift in Sources */,
 				C0879C0D1DFC970F0074F44D /* Board.swift in Sources */,
 				C0C5F7691DFB0AD200329FED /* AppDelegate.swift in Sources */,

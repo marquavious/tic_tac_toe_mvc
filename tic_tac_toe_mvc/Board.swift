@@ -9,43 +9,10 @@
 import UIKit
 
 class Board: UIView {
-    init(frame: CGRect, view: UIView) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = .green
         self.translatesAutoresizingMaskIntoConstraints = false
-        addConstraints(view: view)
-    }
-    
-    func addConstraints(view:UIView){
-        NSLayoutConstraint(item: view,
-                           attribute: .leading,
-                           relatedBy: .equal,
-                           toItem: view,
-                           attribute: .leading,
-                           multiplier: 1,
-                           constant: 0).isActive = true
-        NSLayoutConstraint(item: view,
-                           attribute: .trailing,
-                           relatedBy: .equal,
-                           toItem: view,
-                           attribute: .trailing,
-                           multiplier: 1,
-                           constant: 0).isActive = true
-        
-        NSLayoutConstraint(item: view,
-                           attribute: .height,
-                           relatedBy: .equal,
-                           toItem: view,
-                           attribute: .height,
-                           multiplier: 1,
-                           constant: 0).isActive = true
-        NSLayoutConstraint(item: view,
-                           attribute: .width,
-                           relatedBy: .equal,
-                           toItem: view,
-                           attribute: .width,
-                           multiplier: 1,
-                           constant: 0).isActive = true
     }
     
     required init?(coder aDecoder: NSCoder) {
